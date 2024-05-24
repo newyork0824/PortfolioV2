@@ -8,7 +8,7 @@ function Aboutme() {
 
    return(
     <div id="aboutMe" className="about-me-con">
-        <div className="bio-con">
+        <div className="bio-con con-new">
         <h1 className="about-me-header aligned-text">I love to Create Websites and Software</h1>
         <h2 className="aligned-text">...And Test Them Too!</h2>
         <p className="my-bio">I started my development journey in 2021 when I took an intro to C++ course in college out of curiosity. Though I 
