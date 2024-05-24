@@ -1,0 +1,134 @@
+.sidebar-con {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    background: rgb(1,0,36);
+    background: linear-gradient(90deg, rgba(1,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(0,212,255,1) 100%);
+    z-index: 1;
+    
+}
+
+.nav-btn {
+    display:none;
+}
+
+.nav-sticky {
+    position:fixed;
+    top:0;
+}
+
+.middle-nav-list {
+    display:flex;
+    gap:1rem;
+    list-style-type: none;
+    
+}
+
+
+
+li {
+    font-size:1.2em;
+}
+
+li:hover {
+    opacity: 0.7;
+    color:gold;
+    cursor: pointer;
+}
+
+.Site-title{
+    font-size:2rem;
+    margin-left:0.5em;    
+}
+
+.project-nav-btn-con {
+    margin-right:1rem; 
+}
+
+.project-nav-btn-mob {
+    display: none;
+}
+
+.project-nav-btn {
+    border-radius: 100px;
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    .sidebar-con {
+        height:100px;
+    }
+
+  .nav-btn {
+    display:block;
+    
+  }
+
+  .project-nav-btn-desktop {
+    display: none;
+}
+
+.project-nav-btn-mob  {
+    display: block;
+   
+}
+
+  .nav-btn .line {
+    transition: 1s;
+    transform-origin: center;
+  }
+
+  .nav-btn:hover :is(.top-bar, .bottom-bar) {
+    y:45;
+  }
+
+  .nav-btn:hover .top-bar {
+    rotate: 45deg;
+  }
+
+  .nav-btn:hover .middle-bar {
+    opacity: 0;
+  }
+
+  .nav-btn:hover .bottom-bar {
+    rotate: -45deg;
+  }
+
+  .middle-nav-list {
+    display:none;
+    position: absolute;
+    top: 80px; right:10px;
+    background: linear-gradient(90deg, rgba(1,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(0,212,255,1) 100%);
+    width:20%;
+    padding:0.5em;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .project-nav-btn-con {
+   margin-right: 0;
+   position: absolute;
+   top: 190px; right:10px;
+  
+   background-color: blue;
+   
+
+}
+
+  .active {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+
+}
+
+
+

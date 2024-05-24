@@ -1,0 +1,25 @@
+.projects-title {
+    text-align: center;
+}
+
+
+
+
+.allprojects-con {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    margin-left:25px;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    place-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .allprojects-con {
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+}
+

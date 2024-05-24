@@ -1,0 +1,135 @@
+
+.con {
+    font-family: "Kode Mono", monospace;
+    border:1px solid red;
+}
+
+
+.skills-text{
+    text-align:center;
+
+}
+
+.skills-con {
+    display:grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2.0em;
+    border:1px solid green;
+   
+}
+
+.inner-skills-con {
+ color:green;
+ font-size:1.0rem;
+ overflow: hidden;
+}
+
+@keyframes imgeffect {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.skill-set::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg,rgb(0,183,255),rgb(255,48,255));
+    animation: imgeffect 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+
+
+.skill-set::after {
+    content: "";
+    position:absolute;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+
+.skill-set {
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    width:90%;
+    height:350px;
+    display:grid;
+    border-radius: 45px;
+    padding: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    place-items: center;
+    
+    
+}
+
+.skill-set-title {
+    font-size:1.4rem;
+    grid-area:1/1/ span 1/ span 2;
+    text-align: center;
+    margin-top:0;
+   
+}
+
+.skill {
+    margin-bottom:0;
+    
+}
+
+.skills-pic {
+    height:150px;
+    width:250px;
+}
+@media(prefers-reduced-motion: no-preference){
+.slide-left {
+    animation: 2s slide-left;
+    animation-timeline: view(200px,200px);
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  .slide-right {
+    animation: 3s slide-right;
+    animation-timeline: view(cover,200px);  
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+}
+
+@media (max-width: 500px) {
+  .button-360{
+    padding: 0 2.6rem;
+  }
+
+  .skills-con {
+    grid-template-columns: repeat(1, 1fr);
+    background-color: aqua;
+    color:red;
+  }
+
+  .skill-btn {
+    height:2em;
+    width:20%;
+  }
+}
+
+
+  

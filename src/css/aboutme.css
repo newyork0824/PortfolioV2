@@ -1,0 +1,55 @@
+.about-me-con {
+  font-family: "Kode Mono", monospace;
+  display:grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: 50% 50%;
+}
+
+.bio-con {
+    margin-left:40px;
+}
+
+.about-me-header {
+    
+}
+
+
+.my-bio {
+   line-height: 2.5; 
+}
+
+
+
+.about-me-pic {
+width:300px;
+height:400px;
+scale: .8; opacity: 0;
+animation: fade-in linear forwards;
+animation-timeline: view();
+
+}
+
+@keyframes fade-in {
+    to { scale: 1; opacity: 1;}
+}
+
+
+@media screen and (max-width: 680px) {
+   
+  .about-me-con {
+    grid-template-columns: 100%;
+     
+  }
+
+  .about-me-header {
+    font-size:1.7rem;
+  }
+
+  .my-bio {
+    font-size:1.1rem;
+    line-height:2.0;
+    margin-right:40px;
+  }
+}
