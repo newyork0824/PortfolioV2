@@ -1,5 +1,5 @@
 import SideBar from './src/Modules/Sidebar.jsx'
-import HomePage from './src/Modules/Homepage.jsx'
+import HomePage from './src/Modules/homepage.jsx'
 import Aboutme from './src/Modules/Aboutme.jsx'
 import Skills from './src/Modules/Skills.jsx'
 import Projects from './src/Modules/projects.jsx'

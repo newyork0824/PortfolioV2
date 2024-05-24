@@ -1,7 +1,7 @@
 import React from "react";
 import Projectdata from "../Data/projectdata.js"
 import '../css/projects.css';
-import Project from "./Project"
+import Project from "./project"
 
 
 function Projects(props){
